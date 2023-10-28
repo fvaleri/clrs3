@@ -10,12 +10,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.source.version>17</java.source.version>
+        <java.target.version>17</java.target.version>
 
         <junit.version>4.12</junit.version>
 
-        <plugin.compiler.version>3.10.1</plugin.compiler.version>
-        <plugin.exec.version>3.1.0</plugin.exec.version>
-        <plugin.surefire.version>3.1.2</plugin.surefire.version>
+        <plugin.compiler.version>3.11.0</plugin.compiler.version>
+        <plugin.surefire.version>3.2.1</plugin.surefire.version>
     </properties>
 
     <dependencies>
@@ -30,11 +31,12 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${plugin.compiler.version}</version>
                 <configuration>
-                    <source>17</source>
-                    <target>17</target>
+                    <source>${java.source.version}</source>
+                    <target>${java.target.version}</target>
                 </configuration>
             </plugin>
             <plugin>
