@@ -12,7 +12,7 @@ public class PrimMSTTest {
     private PrimMST cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new PrimMST();
     }
 

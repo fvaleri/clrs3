@@ -10,7 +10,7 @@ public class FibonacciHeapTest {
     private FibonacciHeap cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new FibonacciHeap();
         cut.insert(new Node(23));
         cut.insert(new Node(7));

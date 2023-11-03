@@ -9,7 +9,7 @@ public class SelectionProblemTest {
     private SelectionProblem cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new SelectionProblem();
     }
 

@@ -41,7 +41,7 @@ public class DFSearch {
             if (u.color == Color.WHITE) {
                 // vertex u becomes the root of a new tree in the forest
                 if (scc != null) {
-                    ts = new LinkedList<Vertex>();
+                    ts = new LinkedList<>();
                 }
                 visit(g, u, ts);
                 if (scc != null) {
@@ -74,7 +74,7 @@ public class DFSearch {
             throw new IllegalArgumentException("Invalid input");
         }
         if (g.isDirected()) {
-            List<Vertex> ts = new LinkedList<Vertex>();
+            List<Vertex> ts = new LinkedList<>();
             search(g, ts, null);
             return ts;
         } else {
@@ -89,7 +89,7 @@ public class DFSearch {
         if (g.isDirected()) {
             List<Vertex> ts = topologicalSort(g);
             g.transpose();
-            List<List<Vertex>> scc = new LinkedList<List<Vertex>>();
+            List<List<Vertex>> scc = new LinkedList<>();
             search(g, ts, scc);
             return scc;
         } else {

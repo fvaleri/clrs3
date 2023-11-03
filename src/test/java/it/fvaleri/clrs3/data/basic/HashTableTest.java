@@ -10,7 +10,7 @@ public class HashTableTest {
     private HashTable cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new HashTable();
         cut.insert(new Element(15));
         cut.insert(new Element(4));

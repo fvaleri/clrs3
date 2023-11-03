@@ -28,9 +28,9 @@ public class DisjointSet<E> {
             return;
         }
         if (sets == null) {
-            sets = new LinkedList<List<E>>();
+            sets = new LinkedList<>();
         }
-        List<E> set = new LinkedList<E>();
+        List<E> set = new LinkedList<>();
         set.add(v);
         sets.add(set);
     }

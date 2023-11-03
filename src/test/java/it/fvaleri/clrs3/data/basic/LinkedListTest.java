@@ -10,7 +10,7 @@ public class LinkedListTest {
     private LinkedList cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new LinkedList();
         cut.insert(new Element(15));
         cut.insert(new Element(4));

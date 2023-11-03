@@ -9,7 +9,7 @@ public class RecursiveASTest {
     private RecursiveAS cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new RecursiveAS();
     }
 

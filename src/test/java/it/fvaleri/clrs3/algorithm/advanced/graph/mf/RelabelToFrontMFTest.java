@@ -12,7 +12,7 @@ public class RelabelToFrontMFTest {
     private RelabelToFrontMF cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new RelabelToFrontMF();
     }
 

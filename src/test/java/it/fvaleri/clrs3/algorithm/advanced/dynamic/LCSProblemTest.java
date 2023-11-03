@@ -9,7 +9,7 @@ public class LCSProblemTest {
     private LCSProblem cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new LCSProblem();
     }
 

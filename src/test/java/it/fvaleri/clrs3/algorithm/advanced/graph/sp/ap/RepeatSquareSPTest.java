@@ -14,7 +14,7 @@ public class RepeatSquareSPTest {
     private RepeatSquareSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new RepeatSquareSP();
     }
 

@@ -17,7 +17,7 @@ public abstract class Graph {
 
     public Graph(boolean directed) {
         this.directed = directed;
-        vertices = new LinkedList<Vertex>();
+        vertices = new LinkedList<>();
     }
 
     public abstract int eSize();
@@ -75,7 +75,7 @@ public abstract class Graph {
     }
 
     public List<Edge> getEdges() {
-        List<Edge> edges = new LinkedList<Edge>();
+        List<Edge> edges = new LinkedList<>();
         for (Vertex v : vertices) {
             edges.addAll(outEdges(v));
         }

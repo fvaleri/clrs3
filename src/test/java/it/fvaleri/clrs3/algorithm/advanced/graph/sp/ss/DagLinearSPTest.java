@@ -12,7 +12,7 @@ public class DagLinearSPTest {
     private DagLinearSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new DagLinearSP();
     }
 

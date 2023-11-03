@@ -11,7 +11,7 @@ public class SelectionSortTest {
     private SelectionSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new SelectionSort();
     }
 

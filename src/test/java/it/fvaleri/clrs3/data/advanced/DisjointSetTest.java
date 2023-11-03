@@ -11,8 +11,8 @@ public class DisjointSetTest {
     private DisjointSet<Integer> cut;
 
     @BeforeEach
-    public void setUp() {
-        this.cut = new DisjointSet<Integer>();
+    public void beforeEach() {
+        this.cut = new DisjointSet<>();
     }
 
     @Test

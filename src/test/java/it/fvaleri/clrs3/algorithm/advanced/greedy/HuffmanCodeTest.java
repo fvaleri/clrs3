@@ -10,7 +10,7 @@ public class HuffmanCodeTest {
     private HuffmanCode cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         Character[] c = new Character[6];
         c[0] = new Character('a', 45);
         c[1] = new Character('b', 13);

@@ -10,7 +10,7 @@ public class FibonacciNumberTest {
     private FibonacciNumber cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new FibonacciNumber();
     }
 

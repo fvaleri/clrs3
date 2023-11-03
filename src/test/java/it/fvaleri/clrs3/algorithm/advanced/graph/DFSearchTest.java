@@ -12,7 +12,7 @@ public class DFSearchTest {
     private DFSearch cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new DFSearch();
     }
 

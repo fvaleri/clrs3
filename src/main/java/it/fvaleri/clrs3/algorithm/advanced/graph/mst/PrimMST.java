@@ -19,7 +19,7 @@ public class PrimMST implements MSTProblem {
         if (g == null || g.vSize() == 0) {
             throw new IllegalArgumentException("Invalid input");
         }
-        List<Edge> mst = new LinkedList<Edge>();
+        List<Edge> mst = new LinkedList<>();
         List<Vertex> vertices = g.getVertices();
         Vertex root = vertices.get(0);
         search(g, root);

@@ -78,7 +78,7 @@ public class RelabelToFrontMF extends MFProblem {
     private void initializeState(Graph g, Vertex s, Vertex t) {
         this.g = g;
         // internals vertices V-{s,t}
-        this.l = new LinkedList<Vertex>();
+        this.l = new LinkedList<>();
         for (Vertex v : g.getVertices()) {
             if (!v.equals(s) && !v.equals(t)) {
                 v.key = 0;
@@ -86,9 +86,9 @@ public class RelabelToFrontMF extends MFProblem {
             }
         }
         // neighbors residual edges
-        this.n = new HashMap<String, List<Vertex>>();
+        this.n = new HashMap<>();
         for (Vertex u : g.getVertices()) {
-            List<Vertex> ulist = new LinkedList<Vertex>();
+            List<Vertex> ulist = new LinkedList<>();
             for (Vertex v : g.getVertices()) {
                 if (residualCapacity(u, v, true) > 0) {
                     ulist.add(v);

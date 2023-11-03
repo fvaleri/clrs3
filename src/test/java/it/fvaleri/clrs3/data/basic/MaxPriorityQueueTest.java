@@ -9,7 +9,7 @@ public class MaxPriorityQueueTest {
     private MaxPriorityQueue cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         int[] keys = { 1, 7, 3, 9, 5, 3, 4 };
         this.cut = new MaxPriorityQueue(keys);
     }

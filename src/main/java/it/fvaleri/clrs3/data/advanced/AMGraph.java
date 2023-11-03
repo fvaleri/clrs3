@@ -110,7 +110,7 @@ public class AMGraph extends Graph {
         if (v == null || i == -1) {
             return Collections.emptyList();
         }
-        List<Edge> edges = new LinkedList<Edge>();
+        List<Edge> edges = new LinkedList<>();
         for (int j = 0; j < vSize(); j++) {
             if (adjMatrix.get(i, j) > 0) {
                 edges.add(new Edge(vertices.get(i), vertices.get(j), adjMatrix.get(i, j)));
@@ -129,7 +129,7 @@ public class AMGraph extends Graph {
         if (!isDirected()) {
             return outEdges(v);
         } else {
-            List<Edge> edges = new LinkedList<Edge>();
+            List<Edge> edges = new LinkedList<>();
             for (int j = 0; j < vSize(); j++) {
                 if (adjMatrix.get(j, i) > 0) {
                     edges.add(new Edge(vertices.get(j), vertices.get(i), adjMatrix.get(j, i)));

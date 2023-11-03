@@ -14,7 +14,7 @@ public class JohnsonSPTest {
     private JohnsonSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new JohnsonSP();
     }
 

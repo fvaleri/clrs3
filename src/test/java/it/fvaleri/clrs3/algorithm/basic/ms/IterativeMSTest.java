@@ -11,7 +11,7 @@ public class IterativeMSTest {
     private IterativeMS cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new IterativeMS();
     }
 

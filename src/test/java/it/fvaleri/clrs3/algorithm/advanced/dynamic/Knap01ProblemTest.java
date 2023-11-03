@@ -9,7 +9,7 @@ public class Knap01ProblemTest {
     private Knap01Problem cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new Knap01Problem();
     }
 

@@ -12,7 +12,7 @@ public class BFSearchTest {
     private BFSearch cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         Vertex r = new Vertex("r");
         Vertex s = new Vertex("s");
         Vertex t = new Vertex("t");

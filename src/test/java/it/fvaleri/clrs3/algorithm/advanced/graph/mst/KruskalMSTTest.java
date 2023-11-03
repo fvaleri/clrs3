@@ -12,7 +12,7 @@ public class KruskalMSTTest {
     private KruskalMST cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new KruskalMST();
     }
 

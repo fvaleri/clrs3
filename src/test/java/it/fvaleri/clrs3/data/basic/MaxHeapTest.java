@@ -11,7 +11,7 @@ public class MaxHeapTest {
     private MaxHeap cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         int[] keys = { 1, 7, 3, 9, 5, 3, 4 };
         this.cut = new MaxHeap(keys);
     }

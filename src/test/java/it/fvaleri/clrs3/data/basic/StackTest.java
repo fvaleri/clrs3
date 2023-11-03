@@ -12,7 +12,7 @@ public class StackTest {
     private Stack cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new Stack(10);
     }
 

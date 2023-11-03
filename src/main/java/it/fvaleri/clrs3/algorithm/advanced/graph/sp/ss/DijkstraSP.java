@@ -18,7 +18,7 @@ public class DijkstraSP extends SingleSourceSP {
     @Override
     public boolean execute(Graph g, Vertex s) {
         initialize(g, s);
-        List<Vertex> done = new LinkedList<Vertex>();
+        List<Vertex> done = new LinkedList<>();
         VMPQueue q = new VMPQueue(g.getVertices());
         while (!q.isEmpty()) {
             Vertex u = q.extractMin(); // min distance

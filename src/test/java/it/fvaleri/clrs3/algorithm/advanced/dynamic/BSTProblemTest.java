@@ -9,7 +9,7 @@ public class BSTProblemTest {
     private BSTProblem cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new BSTProblem();
     }
 

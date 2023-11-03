@@ -14,7 +14,7 @@ public class FloydWarshallSPTest {
     private FloydWarshallSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new FloydWarshallSP();
     }
 

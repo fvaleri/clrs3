@@ -10,7 +10,7 @@ public class RedBlackTreeTest {
     private RedBlackTree cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         int[] keys = { 15, 6, 18, 3, 7, 17, 20, 2, 4, 13, 9 };
         this.cut = new RedBlackTree(keys);
     }

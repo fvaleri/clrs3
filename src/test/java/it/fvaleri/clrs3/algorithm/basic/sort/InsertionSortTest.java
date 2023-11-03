@@ -11,7 +11,7 @@ public class InsertionSortTest {
     private InsertionSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new InsertionSort();
     }
 

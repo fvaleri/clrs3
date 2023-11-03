@@ -11,7 +11,7 @@ public class BubbleSortTest {
     private BubbleSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new BubbleSort();
     }
 

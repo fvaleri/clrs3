@@ -12,7 +12,7 @@ public class QueueTest {
     private Queue<Integer> cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new Queue<Integer>(10);
     }
 

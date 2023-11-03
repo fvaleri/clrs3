@@ -22,7 +22,7 @@ public class ALGraph extends Graph {
 
     public ALGraph(boolean directed) {
         super(directed);
-        this.adjLists = new HashMap<String, List<Edge>>();
+        this.adjLists = new HashMap<>();
     }
 
     @Override
@@ -51,7 +51,7 @@ public class ALGraph extends Graph {
         addVertex(v);
         List<Edge> adjU = adjLists.get(u.id);
         if (adjU == null) {
-            adjU = new LinkedList<Edge>();
+            adjU = new LinkedList<>();
             adjLists.put(u.id, adjU);
         }
         Edge uv = new Edge(u, v, weight);
@@ -61,7 +61,7 @@ public class ALGraph extends Graph {
         if (!isDirected()) {
             List<Edge> adjV = adjLists.get(v.id);
             if (adjV == null) {
-                adjV = new LinkedList<Edge>();
+                adjV = new LinkedList<>();
                 adjLists.put(v.id, adjV);
             }
             Edge vu = new Edge(v, u, weight);
@@ -125,7 +125,7 @@ public class ALGraph extends Graph {
         if (!isDirected()) {
             return outEdges(v);
         } else {
-            List<Edge> list = new LinkedList<Edge>();
+            List<Edge> list = new LinkedList<>();
             for (Vertex u : getVertices()) {
                 List<Edge> adjU = adjLists.get(u.id);
                 if (adjU != null) {
@@ -143,7 +143,7 @@ public class ALGraph extends Graph {
     public void transpose() {
         if (isDirected()) {
             Map<String, List<Edge>> tmp = adjLists;
-            adjLists = new HashMap<String, List<Edge>>();
+            adjLists = new HashMap<>();
             for (Vertex u : getVertices()) {
                 List<Edge> adjU = tmp.get(u.id);
                 if (adjU != null) {

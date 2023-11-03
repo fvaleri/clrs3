@@ -20,8 +20,8 @@ public class KruskalMST implements MSTProblem {
         if (g == null || g.vSize() == 0) {
             throw new IllegalArgumentException("Invalid input");
         }
-        List<Edge> mst = new LinkedList<Edge>();
-        DisjointSet<Vertex> forest = new DisjointSet<Vertex>();
+        List<Edge> mst = new LinkedList<>();
+        DisjointSet<Vertex> forest = new DisjointSet<>();
         for (Vertex v : g.getVertices()) {
             forest.makeSet(v);
         }
@@ -35,17 +35,14 @@ public class KruskalMST implements MSTProblem {
     }
 
     private List<Edge> sortEdgesByWeightAsc(Graph g) {
-        List<Edge> edges = new LinkedList<Edge>();
+        List<Edge> edges = new LinkedList<>();
         for (Vertex v : g.getVertices()) {
             edges.addAll(g.outEdges(v));
         }
-        Collections.sort(edges, new Comparator<Edge>() {
-            @Override
-            public int compare(Edge a, Edge b) {
-                Integer aWeight = a.weight;
-                Integer bWeight = b.weight;
-                return aWeight.compareTo(bWeight);
-            }
+        Collections.sort(edges, (a, b) -> {
+            Integer aWeight = a.weight;
+            Integer bWeight = b.weight;
+            return aWeight.compareTo(bWeight);
         });
         return edges;
     }

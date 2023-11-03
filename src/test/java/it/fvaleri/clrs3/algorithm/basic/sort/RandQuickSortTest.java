@@ -11,7 +11,7 @@ public class RandQuickSortTest {
     private RandQuickSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new RandQuickSort();
     }
 

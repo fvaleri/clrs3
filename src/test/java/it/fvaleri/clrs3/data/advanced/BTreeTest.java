@@ -10,7 +10,7 @@ public class BTreeTest {
     private BTree cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         int[] keys = { 2, 1, 3, 8, 10, 5, 12, 11 };
         this.cut = new BTree(keys);
     }

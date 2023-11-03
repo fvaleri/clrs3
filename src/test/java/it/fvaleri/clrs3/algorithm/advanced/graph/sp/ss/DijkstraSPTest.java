@@ -12,7 +12,7 @@ public class DijkstraSPTest {
     private DijkstraSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new DijkstraSP();
     }
 

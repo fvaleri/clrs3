@@ -12,7 +12,7 @@ public class CountSortTest {
     private CountSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new CountSort();
     }
 

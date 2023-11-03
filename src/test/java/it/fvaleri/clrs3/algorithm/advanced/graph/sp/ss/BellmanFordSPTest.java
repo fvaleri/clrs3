@@ -13,7 +13,7 @@ public class BellmanFordSPTest {
     private BellmanFordSP cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new BellmanFordSP();
     }
 

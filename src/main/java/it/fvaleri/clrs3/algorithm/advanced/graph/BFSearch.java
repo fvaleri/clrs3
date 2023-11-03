@@ -54,7 +54,7 @@ public class BFSearch {
 
     public List<Edge> shortestPath(Vertex u, Vertex v) {
         execute(u);
-        return shortestPath(u, v, new LinkedList<Edge>());
+        return shortestPath(u, v, new LinkedList<>());
     }
 
     private List<Edge> shortestPath(Vertex u, Vertex v, List<Edge> p) {

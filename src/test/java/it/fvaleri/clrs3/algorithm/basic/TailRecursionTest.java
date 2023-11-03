@@ -10,7 +10,7 @@ public class TailRecursionTest {
     private TailRecursion cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new TailRecursion();
     }
 

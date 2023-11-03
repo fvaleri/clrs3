@@ -9,7 +9,7 @@ public class BottomUpRCTest {
     private BottomUpRC cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new BottomUpRC();
     }
 

@@ -12,7 +12,7 @@ public class KMPSearch {
         if (t == null || t.isEmpty() || p == null || p.isEmpty()) {
             throw new IllegalArgumentException("Invalid input");
         }
-        List<Integer> shifts = new ArrayList<Integer>();
+        List<Integer> shifts = new ArrayList<>();
         int n = t.length();
         int m = p.length();
         int[] pi = computePrefixFunction(p);

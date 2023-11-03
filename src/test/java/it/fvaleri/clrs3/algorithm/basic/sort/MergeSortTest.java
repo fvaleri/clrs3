@@ -11,7 +11,7 @@ public class MergeSortTest {
     private MergeSort cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new MergeSort();
     }
 

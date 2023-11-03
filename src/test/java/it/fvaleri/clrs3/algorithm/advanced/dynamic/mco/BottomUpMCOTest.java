@@ -9,7 +9,7 @@ public class BottomUpMCOTest {
     private BottomUpMCO cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new BottomUpMCO();
     }
 

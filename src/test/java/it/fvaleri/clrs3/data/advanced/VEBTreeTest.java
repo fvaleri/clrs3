@@ -11,7 +11,7 @@ public class VEBTreeTest {
     private VEBTree cut;
 
     @BeforeEach
-    public void setUp() {
+    public void beforeEach() {
         this.cut = new VEBTree(17);
         cut.insert(2);
         cut.insert(3);
