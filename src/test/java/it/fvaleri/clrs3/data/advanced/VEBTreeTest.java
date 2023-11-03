@@ -1,14 +1,16 @@
 package it.fvaleri.clrs3.data.advanced;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class VEBTreeTest {
     private VEBTree cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new VEBTree(17);
         cut.insert(2);

@@ -1,16 +1,16 @@
 package it.fvaleri.clrs3.data.basic;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaxHeapTest {
     private MaxHeap cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         int[] keys = { 1, 7, 3, 9, 5, 3, 4 };
         this.cut = new MaxHeap(keys);

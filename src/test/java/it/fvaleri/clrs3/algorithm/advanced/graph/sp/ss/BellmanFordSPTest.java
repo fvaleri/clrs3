@@ -3,16 +3,16 @@ package it.fvaleri.clrs3.algorithm.advanced.graph.sp.ss;
 import it.fvaleri.clrs3.data.advanced.ALGraph;
 import it.fvaleri.clrs3.data.advanced.Graph;
 import it.fvaleri.clrs3.data.advanced.Graph.Vertex;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BellmanFordSPTest {
     private BellmanFordSP cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new BellmanFordSP();
     }

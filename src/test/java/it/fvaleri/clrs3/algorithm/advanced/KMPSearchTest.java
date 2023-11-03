@@ -1,14 +1,15 @@
 package it.fvaleri.clrs3.algorithm.advanced;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class KMPSearchTest {
     private KMPSearch cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new KMPSearch();
     }
@@ -20,13 +21,13 @@ public class KMPSearchTest {
         assertEquals("[]", cut.execute("abcdef", "gh").toString());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void emptyText() {
-        cut.execute("", "gh");
+        assertThrows(IllegalArgumentException.class, () -> cut.execute("", "gh"));
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void emptyPattern() {
-        cut.execute("abcdef", "");
+        assertThrows(IllegalArgumentException.class, () -> cut.execute("abcdef", ""));
     }
 }

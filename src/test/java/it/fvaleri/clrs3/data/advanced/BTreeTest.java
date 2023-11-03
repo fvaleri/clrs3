@@ -1,15 +1,15 @@
 package it.fvaleri.clrs3.data.advanced;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BTreeTest {
     private BTree cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         int[] keys = { 2, 1, 3, 8, 10, 5, 12, 11 };
         this.cut = new BTree(keys);

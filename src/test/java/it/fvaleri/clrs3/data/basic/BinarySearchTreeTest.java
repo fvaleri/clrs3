@@ -1,15 +1,15 @@
 package it.fvaleri.clrs3.data.basic;
 
 import it.fvaleri.clrs3.data.basic.DynamicSet.Element;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinarySearchTreeTest {
     private BinarySearchTree cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         int[] keys = { 15, 6, 18, 3, 7, 17, 20, 2, 4, 13, 9 };
         this.cut = new BinarySearchTree(keys);

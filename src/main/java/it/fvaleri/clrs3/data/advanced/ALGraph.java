@@ -1,6 +1,10 @@
 package it.fvaleri.clrs3.data.advanced;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Adjacency-list graph (used for sparse graphs).

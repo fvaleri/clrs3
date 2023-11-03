@@ -1,17 +1,17 @@
 package it.fvaleri.clrs3.algorithm.basic.sort;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CountSortTest {
     private CountSort cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new CountSort();
     }
@@ -23,9 +23,9 @@ public class CountSortTest {
         assertEquals(Arrays.toString(e), Arrays.toString(cut.execute(a)));
     }
 
-    @Test(expected = Exception.class)
+    @Test
     public void integers() {
         int[] a = { -5, 8, 150, 0, -348, -2, 45 };
-        assertNull(cut.execute(a));
+        assertThrows(Exception.class, () -> cut.execute(a));
     }
 }

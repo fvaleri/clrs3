@@ -1,14 +1,16 @@
 package it.fvaleri.clrs3.data.advanced;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class DisjointSetTest {
     private DisjointSet<Integer> cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new DisjointSet<Integer>();
     }

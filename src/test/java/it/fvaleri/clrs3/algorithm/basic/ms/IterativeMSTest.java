@@ -1,16 +1,16 @@
 package it.fvaleri.clrs3.algorithm.basic.ms;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IterativeMSTest {
     private IterativeMS cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new IterativeMS();
     }

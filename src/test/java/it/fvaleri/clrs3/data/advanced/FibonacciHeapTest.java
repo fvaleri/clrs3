@@ -1,15 +1,15 @@
 package it.fvaleri.clrs3.data.advanced;
 
 import it.fvaleri.clrs3.data.advanced.FibonacciHeap.Node;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FibonacciHeapTest {
     private FibonacciHeap cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new FibonacciHeap();
         cut.insert(new Node(23));

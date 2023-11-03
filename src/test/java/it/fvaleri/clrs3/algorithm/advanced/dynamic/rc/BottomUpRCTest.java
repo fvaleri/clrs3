@@ -1,14 +1,14 @@
 package it.fvaleri.clrs3.algorithm.advanced.dynamic.rc;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BottomUpRCTest {
     private BottomUpRC cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new BottomUpRC();
     }

@@ -1,14 +1,17 @@
 package it.fvaleri.clrs3.data.basic;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StackTest {
     private Stack cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new Stack(10);
     }
@@ -28,15 +31,17 @@ public class StackTest {
         assertTrue(cut.isEmpty());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void overflow() {
-        for (int i = 0; i < 11; i++) {
-            cut.push(3);
-        }
+        assertThrows(IllegalArgumentException.class, () -> {
+            for (int i = 0; i < 11; i++) {
+                cut.push(3);
+            }
+        });
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void underflow() {
-        cut.pop();
+        assertThrows(IllegalArgumentException.class, () -> cut.pop());
     }
 }

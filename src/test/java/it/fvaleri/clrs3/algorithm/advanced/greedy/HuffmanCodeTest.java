@@ -1,15 +1,15 @@
 package it.fvaleri.clrs3.algorithm.advanced.greedy;
 
 import it.fvaleri.clrs3.algorithm.advanced.greedy.HuffmanCode.Character;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HuffmanCodeTest {
     private HuffmanCode cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         Character[] c = new Character[6];
         c[0] = new Character('a', 45);

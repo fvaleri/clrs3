@@ -1,16 +1,17 @@
 package it.fvaleri.clrs3.data.basic;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class QueueTest {
     private Queue<Integer> cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new Queue<Integer>(10);
     }
@@ -28,15 +29,17 @@ public class QueueTest {
         assertFalse(cut.isEmpty());
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void overflow() {
-        for (int i = 0; i < 12; i++) {
-            cut.enqueue(3);
-        }
+        assertThrows(IllegalArgumentException.class, () -> {
+            for (int i = 0; i < 12; i++) {
+                cut.enqueue(3);
+            }
+        });
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void underflow() {
-        cut.dequeue();
+        assertThrows(IllegalArgumentException.class, () ->cut.dequeue());
     }
 }

@@ -3,17 +3,17 @@ package it.fvaleri.clrs3.algorithm.advanced.graph.sp.ap;
 import it.fvaleri.clrs3.data.advanced.AMGraph;
 import it.fvaleri.clrs3.data.advanced.Graph;
 import it.fvaleri.clrs3.data.advanced.Graph.Vertex;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FloydWarshallSPTest {
     private FloydWarshallSP cut;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         this.cut = new FloydWarshallSP();
     }
