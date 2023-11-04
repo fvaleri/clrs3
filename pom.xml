@@ -44,7 +44,6 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${plugin.surefire.version}</version>
                 <configuration>
-                    <argLine>-Dfile.encoding=${project.build.sourceEncoding}</argLine>
                     <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>
                 </configuration>
